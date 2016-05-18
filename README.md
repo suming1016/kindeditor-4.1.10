@@ -1,271 +1,272 @@
 # kindeditor-4.1.10
 
-kindEditorç¼–è¾‘å™¨æ˜¯ä¸€ä¸ªç”±JSå†™æˆçš„åœ¨çº¿ç¼–è¾‘å™¨ï¼Œå¾ˆå¤šç½‘ç«™æˆ–CMSç­‰éƒ½æœ‰ç”¨å®ƒï¼Œå£ç¢‘ä¸é”™ï¼Œç›®å‰æœ€æ–°ç‰ˆæœ¬æ˜¯4.1.10ã€‚å…¶å®å®ƒçš„ç”¨æ³•éå¸¸ç®€å•:
+kindEditor±à¼­Æ÷ÊÇÒ»¸öÓÉJSĞ´³ÉµÄÔÚÏß±à¼­Æ÷£¬ºÜ¶àÍøÕ¾»òCMSµÈ¶¼ÓĞÓÃËü£¬¿Ú±®²»´í£¬Ä¿Ç°×îĞÂ°æ±¾ÊÇ4.1.10¡£ÆäÊµËüµÄÓÃ·¨·Ç³£¼òµ¥:
 
-ä¸€ã€ä¸‹è½½
+Ò»¡¢ÏÂÔØ
 
-    ç›´æ¥ç‚¹å‡»â€œdownload zipâ€ä¸‹è½½å³å¯
+    Ö±½Óµã»÷¡°download zip¡±ÏÂÔØ¼´¿É
 
-äºŒã€éƒ¨ç½²
-è§£å‹kindeditor-x.x.x.zipæ–‡ä»¶ï¼Œå°†æ‰€æœ‰æ–‡ä»¶ä¸Šä¼ åˆ°æ‚¨çš„ç½‘ç«™ç¨‹åºç›®å½•é‡Œï¼Œä¾‹å¦‚ï¼šhttp://æ‚¨çš„åŸŸå/editor/
-æ‚¨å¯ä»¥æ ¹æ®éœ€æ±‚åˆ é™¤ä»¥ä¸‹ç›®å½•åä¸Šä¼ åˆ°æœåŠ¡å™¨ã€‚
-	asp-ASPç¨‹åº
-	asp.net-ASP.NETç¨‹åº
-	php-PHPç¨‹åº
-	sp-JSPç¨‹åº
-	examples-æ¼”ç¤ºæ–‡ä»¶
-åœ¨è¿™é‡Œæˆ‘å‡è®¾æ”¾åˆ°äº†pluginç›®å½•ã€‚
+¶ş¡¢²¿Êğ
+½âÑ¹kindeditor-x.x.x.zipÎÄ¼ş£¬½«ËùÓĞÎÄ¼şÉÏ´«µ½ÄúµÄÍøÕ¾³ÌĞòÄ¿Â¼Àï£¬ÀıÈç£ºhttp://ÄúµÄÓòÃû/editor/
+Äú¿ÉÒÔ¸ù¾İĞèÇóÉ¾³ıÒÔÏÂÄ¿Â¼ºóÉÏ´«µ½·şÎñÆ÷¡£
+	asp-ASP³ÌĞò
+	asp.net-ASP.NET³ÌĞò
+	php-PHP³ÌĞò
+	sp-JSP³ÌĞò
+	examples-ÑİÊ¾ÎÄ¼ş
+ÔÚÕâÀïÎÒ¼ÙÉè·Åµ½ÁËpluginÄ¿Â¼¡£
 
-ä¸‰ã€åµŒå…¥
+Èı¡¢Ç¶Èë
 
-    åœ¨éœ€è¦åŠ å…¥ç¼–è¾‘å™¨çš„é¡µé¢çš„HTMLä¸­å€’å…¥
+    ÔÚĞèÒª¼ÓÈë±à¼­Æ÷µÄÒ³ÃæµÄHTMLÖĞµ¹Èë
 
 	<link rel="stylesheet" href="/plugin/kindeditor-4.1.10/themes/default/default.css" />
 	<script charset="utf-8" src="/plugin/kindeditor-4.1.10/kindeditor-min.js"></script>
 	<script charset="utf-8" src="/plugin/kindeditor-4.1.10/lang/zh_CN.js"></script>
-ç„¶åæ·»åŠ ä¸€ä¸ªè¾“å…¥æ¡†
+È»ºóÌí¼ÓÒ»¸öÊäÈë¿ò
 	<textarea id="editor_id" name="content"></textarea>
-æœ€ååœ¨åŠ å…¥ä¸€æ®µJS
+×îºóÔÚ¼ÓÈëÒ»¶ÎJS
 <script>
-	KindEditor.ready(function(K) {
-		window.editor = K.create('#editor_id',{
-				cssPath:'/public/plugin/editor/plugins/code/prettify.css',
-				uploadJson:'/upload/image.php',
-				resizeType :1,
-				allowPreviewEmoticons : true,
-				allowImageUpload : true,
-		});
-	});
+KindEditor.ready(function(K) {
+window.editor = K.create('#editor_id',{
+cssPath:'/public/plugin/editor/plugins/code/prettify.css',
+uploadJson:'/upload/image.php',
+resizeType :1,
+allowPreviewEmoticons : true,
+allowImageUpload : true,
+});
+});
 </script>
-å¥½äº†ã€‚åˆ°è¿™é‡Œä½ åº”è¯¥å·²ç»å¯ä»¥çœ‹é¡µé¢ä¸Šçš„ç¼–è¾‘å™¨äº†ã€‚
-è¿™é‡Œæˆ‘è¿˜è¦è¯´çš„ä¸€ç‚¹æ˜¯  K.createçš„ç¬¬ä¸€ä¸ªå‚æ•°å°±æ˜¯å‰é¢textareaçš„IDï¼Œåé¢è·Ÿçš„JSONæ ¼å¼çš„æ•°æ®ä¿æŠ¤äº†è¯¥ç¼–è¾‘å™¨çš„å¾ˆå¤šåŠŸèƒ½ã€‚æ¯”å¦‚æˆ‘ä»£ç ä¸Šå†™çš„
+ºÃÁË¡£µ½ÕâÀïÄãÓ¦¸ÃÒÑ¾­¿ÉÒÔ¿´Ò³ÃæÉÏµÄ±à¼­Æ÷ÁË¡£
+ÕâÀïÎÒ»¹ÒªËµµÄÒ»µãÊÇ  K.createµÄµÚÒ»¸ö²ÎÊı¾ÍÊÇÇ°ÃætextareaµÄID£¬ºóÃæ¸úµÄJSON¸ñÊ½µÄÊı¾İ±£»¤ÁË¸Ã±à¼­Æ÷µÄºÜ¶à¹¦ÄÜ¡£±ÈÈçÎÒ´úÂëÉÏĞ´µÄ
 
-cssPathæ˜¯ä»£ç æ ·å¼è¡¨ï¼ŒuploadJsonæ˜¯ç¼–è¾‘å™¨çš„å›¾ç‰‡ä¸Šä¼ ç»„ä»¶çš„ä¸Šä¼ åœ°å€ã€‚
+cssPathÊÇ´úÂëÑùÊ½±í£¬uploadJsonÊÇ±à¼­Æ÷µÄÍ¼Æ¬ÉÏ´«×é¼şµÄÉÏ´«µØÖ·¡£
 
-è¯´åˆ°ä¸Šä¼ åœ°å€ï¼Œå¤§å®¶åº”è¯¥è¿˜è®°çš„åœ¨ä¸Šä¼ æœåŠ¡å™¨ä¹‹å‰æˆ‘å«å¤§å®¶å…ˆåˆ æ‰çš„å‡ ä¸ªæ–‡ä»¶å¤¹å§ï¼Œé€‰æ‹©ä½ çš„ç½‘ç«™çš„å¼€å‘è¯­è¨€çš„ç›®å½•ä½ å¯ä»¥çœ‹åˆ°å¦‚PHPç›®å½•ä¸‹çš„upload_json.phpæ–‡ä»¶ï¼Œå®ƒé‡Œé¢ä¸»è¦å†™äº†æ¥å—å›¾ç‰‡ä¸Šä¼ çš„æ–¹æ³•ï¼Œå¤§å®¶å¯ä»¥æ”¹æ”¹è‡ªå·±ç”¨ã€‚åå°éƒ¨åˆ†çš„ä¸œè¥¿è¿™é‡Œå°±ä¸ç»†è®²äº†ã€‚
+Ëµµ½ÉÏ´«µØÖ·£¬´ó¼ÒÓ¦¸Ã»¹¼ÇµÄÔÚÉÏ´«·şÎñÆ÷Ö®Ç°ÎÒ½Ğ´ó¼ÒÏÈÉ¾µôµÄ¼¸¸öÎÄ¼ş¼Ğ°É£¬Ñ¡ÔñÄãµÄÍøÕ¾µÄ¿ª·¢ÓïÑÔµÄÄ¿Â¼Äã¿ÉÒÔ¿´µ½ÈçPHPÄ¿Â¼ÏÂµÄupload_json.phpÎÄ¼ş£¬ËüÀïÃæÖ÷ÒªĞ´ÁË½ÓÊÜÍ¼Æ¬ÉÏ´«µÄ·½·¨£¬´ó¼Ò¿ÉÒÔ¸Ä¸Ä×Ô¼ºÓÃ¡£ºóÌ¨²¿·ÖµÄ¶«Î÷ÕâÀï¾Í²»Ï¸½²ÁË¡£
 
-å››ã€å–å€¼
+ËÄ¡¢È¡Öµ
 
-    ç¼–è¾‘å™¨åµŒå…¥å®Œæˆåæˆ‘ä»¬å¦‚ä½•å–å€¼å‘¢ï¼Ÿå…¶å®å®ƒçš„åŒ…é‡Œä¹Ÿæœ‰ä¾‹å­—ï¼Œé‚£å°±æ˜¯  ç”¨editor.html()æ–¹æ³•æ¥å–å€¼ã€‚
+    ±à¼­Æ÷Ç¶ÈëÍê³ÉºóÎÒÃÇÈçºÎÈ¡ÖµÄØ£¿ÆäÊµËüµÄ°üÀïÒ²ÓĞÀı×Ö£¬ÄÇ¾ÍÊÇ  ÓÃeditor.html()·½·¨À´È¡Öµ¡£
     
 --------------------------------------------------------------------------------------------------------------------------------------
-kindeditor-4.1.10ç”¨æ³•ä»‹ç»ï¼š
+kindeditor-4.1.10ÓÃ·¨½éÉÜ£º
     
-ä¸€ã€aspæ·»åŠ ç¼–è¾‘å™¨
-1åœ¨è¯¥HTMLé¡µé¢æ·»åŠ ä»¥ä¸‹è„šæœ¬ï¼Œæ³¨æ„çº¢è‰²ä»£ç è·¯å¾„ï¼š
+Ò»¡¢aspÌí¼Ó±à¼­Æ÷
+1ÔÚ¸ÃHTMLÒ³ÃæÌí¼ÓÒÔÏÂ½Å±¾£¬×¢ÒâºìÉ«´úÂëÂ·¾¶£º
 <link rel="stylesheet" href=" kindeditor/themes/default/default.css" />
 <script charset="utf-8" src="kindeditor/kindeditor.js"></script>
 <script charset="utf-8" src="kindeditor/lang/zh_CN.js"></script>
 <script>
-      var editor;
-      KindEditor.ready(function(K) {
-              editor = K.create('#editor_id');
+var editor;
+KindEditor.ready(function(K) {
+editor = K.create('#editor_id');
       });
 </script>
-æ³¨é‡Šï¼šä¸å«ä¸Šä¼ æ–‡ä»¶åŠŸèƒ½
+×¢ÊÍ£º²»º¬ÉÏ´«ÎÄ¼ş¹¦ÄÜ
 <link rel="stylesheet" href=" kindeditor/themes/default/default.css" />
 <script charset="utf-8" src="kindeditor/kindeditor.js"></script>
 <script charset="utf-8" src="kindeditor/lang/zh_CN.js"></script>
 <script>
-      var editor;
-      KindEditor.ready(function(K) {
-              editor = K.create('#editor_id',{
-              uploadJson : 'kindeditor/asp/upload_json.asp',
-              fileManagerJson : 'kindeditor/asp/file_manager_json.asp',
-              allowFileManager : true
-      });
-      });
+var editor;
+KindEditor.ready(function(K) {
+editor = K.create('#editor_id',{
+uploadJson : 'kindeditor/asp/upload_json.asp',
+fileManagerJson : 'kindeditor/asp/file_manager_json.asp',
+allowFileManager : true
+});
+});
 </script>
-æ³¨é‡Šï¼šå«æœ‰ä¸Šä¼ æ–‡ä»¶åŠŸèƒ½
-2åœ¨éœ€è¦æ˜¾ç¤ºç¼–è¾‘å™¨çš„ä½ç½®æ·»åŠ textareaè¾“å…¥æ¡†ï¼š
+×¢ÊÍ£ºº¬ÓĞÉÏ´«ÎÄ¼ş¹¦ÄÜ
+2ÔÚĞèÒªÏÔÊ¾±à¼­Æ÷µÄÎ»ÖÃÌí¼ÓtextareaÊäÈë¿ò£º
 <textarea id="editor_id" name="content" style="width:700px;height:300px;">
-&lt;strong&gt;HTMLå†…å®¹&lt;/strong&gt;
+&lt;strong&gt;HTMLÄÚÈİ&lt;/strong&gt;
 </textarea>
-äºŒã€å¦‚éœ€è¦å•ç‹¬è°ƒç”¨ç»„ä»¶ï¼š
-1 åœ¨å·²ç»æ·»åŠ ä»¥ä¸‹è„šæœ¬ä¸‹åŠ å…¥ï¼š
+¶ş¡¢ÈçĞèÒªµ¥¶Àµ÷ÓÃ×é¼ş£º
+1 ÔÚÒÑ¾­Ìí¼ÓÒÔÏÂ½Å±¾ÏÂ¼ÓÈë£º
 <script charset="utf-8" src="kindeditor/kindeditor.js"></script>
 <script charset="utf-8" src="kindeditor/lang/zh_CN.js"></script>
 <script>
-      var editor;
-      KindEditor.ready(function(K) {
-              editor = K.create('#editor_id',{
-              uploadJson : 'kindeditor/asp/upload_json.asp',
-              fileManagerJson : 'kindeditor/asp/file_manager_json.asp',
-              allowFileManager : true
-      });
-     --------------------------æ³¨æ„æ·»åŠ ä½ç½®å’Œçº¢è‰²ä»£ç åç§°----------------------                          
-                   K('#image1').click(function() {
-                   editor.loadPlugin('image', function() {
-                   editor.plugin.imageDialog({
-                   showRemote : false,
-                   imageUrl : K('#img').val(),
-                   clickFn : function(url, title, width, height, border, align) {
-                                                      K('#img').val(url);
-                                                      editor.hideDialog();
-                                               }});});});
-     --------------------------æ³¨æ„æ·»åŠ ä½ç½®å’Œçº¢è‰²ä»£ç åç§°----------------------
-      });
+var editor;
+KindEditor.ready(function(K) {
+editor = K.create('#editor_id',{
+uploadJson : 'kindeditor/asp/upload_json.asp',
+fileManagerJson : 'kindeditor/asp/file_manager_json.asp',
+allowFileManager : true
+});
+     --------------------------×¢ÒâÌí¼ÓÎ»ÖÃºÍºìÉ«´úÂëÃû³Æ----------------------                          
+K('#image1').click(function() {
+editor.loadPlugin('image', function() {
+editor.plugin.imageDialog({
+showRemote : false,
+imageUrl : K('#img').val(),
+clickFn : function(url, title, width, height, border, align) {
+K('#img').val(url);
+editor.hideDialog();
+}});});});
+     --------------------------×¢ÒâÌí¼ÓÎ»ÖÃºÍºìÉ«´úÂëÃû³Æ----------------------
+});
 </script>
-2åœ¨éœ€è¦æ˜¾ç¤ºç¼–è¾‘å™¨çš„ä½ç½®æ·»åŠ inputè¾“å…¥æ¡†ï¼š
-<input type="text" id="img" name="img" value="" size=50 /> <input type="button" id="image1" value="é€‰æ‹©å›¾ç‰‡" />
+2ÔÚĞèÒªÏÔÊ¾±à¼­Æ÷µÄÎ»ÖÃÌí¼ÓinputÊäÈë¿ò£º
+<input type="text" id="img" name="img" value="" size=50 /> <input type="button" id="image1" value="Ñ¡ÔñÍ¼Æ¬" />
 
-ä¸‰ã€éƒ¨åˆ†è„šæœ¬ä»£ç ï¼Œæ›´å¤šå‚ç…§å®˜æ–¹æ¼”ç¤ºæ–‡æ¡£ï¼š
+Èı¡¢²¿·Ö½Å±¾´úÂë£¬¸ü¶à²ÎÕÕ¹Ù·½ÑİÊ¾ÎÄµµ£º
 
-1 ä¸Šä¼ å›¾ç‰‡å¼¹å‡ºæ¡†
+1 ÉÏ´«Í¼Æ¬µ¯³ö¿ò
 <html>
-     <head>
-            <meta charset="utf-8" />
-            <title>ImageDialog Examples</title>
-            <link rel="stylesheet" href="../themes/default/default.css" />
-            <script src="../kindeditor.js"></script>
-            <script src="../lang/zh_CN.js"></script>
-            <script>
-                   KindEditor.ready(function(K) {
-                          var editor = K.editor({
-                                 allowFileManager : true
-                          });
-                          K('#image1').click(function() {
-                                 editor.loadPlugin('image', function() {
-                                        editor.plugin.imageDialog({
-                                               imageUrl : K('#url1').val(),
-                                               clickFn : function(url, title, width, height, border, align) {
-                                                      K('#url1').val(url);
-                                                      editor.hideDialog();
-                                               }
-                                        });
-                                 });
-                          });
-                          K('#image2').click(function() {
-                                 editor.loadPlugin('image', function() {
-                                        editor.plugin.imageDialog({
-                                               showLocal : false,
-                                               imageUrl : K('#url2').val(),
-                                               clickFn : function(url, title, width, height, border, align) {
-                                                      K('#url2').val(url);
-                                                      editor.hideDialog();
-                                               }
-                                        });
-                                 });
-                          });
-                          K('#image3').click(function() {
-                                 editor.loadPlugin('image', function() {
-                                        editor.plugin.imageDialog({
-                                               showRemote : false,
-                                               imageUrl : K('#url3').val(),
-                                               clickFn : function(url, title, width, height, border, align) {
-                                                      K('#url3').val(url);
-                                                      editor.hideDialog();
-                                               }
-                                        });
-                                 });
-                          });
-                   });
-            </script>
-     </head>
-     <body>
-            <p><input type="text" id="url1" value="" /> <input type="button" id="image1" value="é€‰æ‹©å›¾ç‰‡" />ï¼ˆç½‘ç»œå›¾ç‰‡ + æœ¬åœ°ä¸Šä¼ ï¼‰</p>
-            <p><input type="text" id="url2" value="" /> <input type="button" id="image2" value="é€‰æ‹©å›¾ç‰‡" />ï¼ˆç½‘ç»œå›¾ç‰‡ï¼‰</p>
-            <p><input type="text" id="url3" value="" /> <input type="button" id="image3" value="é€‰æ‹©å›¾ç‰‡" />ï¼ˆæœ¬åœ°ä¸Šä¼ ï¼‰</p>
-     </body></html>
+<head>
+<meta charset="utf-8" />
+<title>ImageDialog Examples</title>
+<link rel="stylesheet" href="../themes/default/default.css" />
+<script src="../kindeditor.js"></script>
+<script src="../lang/zh_CN.js"></script>
+<script>
+KindEditor.ready(function(K) {
+var editor = K.editor({
+allowFileManager : true
+});
+K('#image1').click(function() {
+editor.loadPlugin('image', function() {
+editor.plugin.imageDialog({
+imageUrl : K('#url1').val(),
+clickFn : function(url, title, width, height, border, align) {
+K('#url1').val(url);
+editor.hideDialog();
+}
+});
+});
+});
+K('#image2').click(function() {
+editor.loadPlugin('image', function() {
+editor.plugin.imageDialog({
+showLocal : false,
+imageUrl : K('#url2').val(),
+clickFn : function(url, title, width, height, border, align) {
+K('#url2').val(url);
+editor.hideDialog();
+}
+});
+});
+});
+K('#image3').click(function() {
+editor.loadPlugin('image', function() {
+editor.plugin.imageDialog({
+showRemote : false,
+imageUrl : K('#url3').val(),
+clickFn : function(url, title, width, height, border, align) {
+K('#url3').val(url);
+editor.hideDialog();
+}
+});
+});
+});
+});
+</script>
+</head>
+<body>
+<p><input type="text" id="url1" value="" /> <input type="button" id="image1" value="Ñ¡ÔñÍ¼Æ¬" />£¨ÍøÂçÍ¼Æ¬ + ±¾µØÉÏ´«£©</p>
+<p><input type="text" id="url2" value="" /> <input type="button" id="image2" value="Ñ¡ÔñÍ¼Æ¬" />£¨ÍøÂçÍ¼Æ¬£©</p>
+<p><input type="text" id="url3" value="" /> <input type="button" id="image3" value="Ñ¡ÔñÍ¼Æ¬" />£¨±¾µØÉÏ´«£©</p>
+</body></html>
      
-2 æ‰¹é‡ä¸Šä¼ å›¾ç‰‡å¼¹å‡ºæ¡†
+2 ÅúÁ¿ÉÏ´«Í¼Æ¬µ¯³ö¿ò
 <html>
-     <head>
-            <meta charset="utf-8" />
-            <title>MultiImageDialog Examples</title>
-            <link rel="stylesheet" href="../themes/default/default.css" />
-            <script src="../kindeditor.js"></script>
-            <script src="../lang/zh_CN.js"></script>
-            <script>
-                   KindEditor.ready(function(K) {
-                          var editor = K.editor({
-                                 allowFileManager : true
-                          });
-                          K('#J_selectImage').click(function() {
-                                 editor.loadPlugin('multiimage', function() {
-                                        editor.plugin.multiImageDialog({
-                                               clickFn : function(urlList) {
-                                                      var div = K('#J_imageView');
-                                                      div.html('');
-                                                      K.each(urlList, function(i, data) {
-                                                             div.append('<img src="' + data.url + '">');
-                                                      });
-                                                      editor.hideDialog();
-                                               }
-                                        });
-                                 });
-                          });
-                   });
-            </script>
-     </head>
-     <body>
-            <input type="button" id="J_selectImage" value="æ‰¹é‡ä¸Šä¼ " />
-            <div id="J_imageView"></div>
-     </body>
+<head>
+<meta charset="utf-8" />
+<title>MultiImageDialog Examples</title>
+<link rel="stylesheet" href="../themes/default/default.css" />
+<script src="../kindeditor.js"></script>
+<script src="../lang/zh_CN.js"></script>
+<script>
+KindEditor.ready(function(K) {
+var editor = K.editor({
+allowFileManager : true
+});
+K('#J_selectImage').click(function() {
+editor.loadPlugin('multiimage', function() {
+editor.plugin.multiImageDialog({
+clickFn : function(urlList) {
+var div = K('#J_imageView');
+div.html('');
+K.each(urlList, function(i, data) {
+div.append('<img src="' + data.url + '">');
+});
+editor.hideDialog();
+}
+});
+});
+});
+});
+</script>
+</head>
+<body>
+<input type="button" id="J_selectImage" value="ÅúÁ¿ÉÏ´«" />
+<div id="J_imageView"></div>
+</body>
 </html>
 
-3 ä¸Šä¼ æ–‡ä»¶å¼¹å‡ºæ¡†
+3 ÉÏ´«ÎÄ¼şµ¯³ö¿ò
 <html>
-     <head>
-            <meta charset="utf-8" />
-            <title>fileDialog Examples</title>
-            <link rel="stylesheet" href="../themes/default/default.css" />
-            <script src="../kindeditor.js"></script>
-            <script src="../lang/zh_CN.js"></script>
-            <script>
-                   KindEditor.ready(function(K) {
-                          var editor = K.editor({
-                                 allowFileManager : true
-                          });
-                          K('#insertfile').click(function() {
-                                 editor.loadPlugin('insertfile', function() {
-                                        editor.plugin.fileDialog({
-                                               fileUrl : K('#url').val(),
-                                               clickFn : function(url, title) {
-                                                      K('#url').val(url);
-                                                      editor.hideDialog();
-                                               }
-                                        });
-                                 });
-                          });
-                   });
-            </script>
-     </head>
-     <body>
-            <input type="text" id="url" value="" /> <input type="button" id="insertfile" value="é€‰æ‹©æ–‡ä»¶" />
-     </body>
+<head>
+<meta charset="utf-8" />
+<title>fileDialog Examples</title>
+<link rel="stylesheet" href="../themes/default/default.css" />
+<script src="../kindeditor.js"></script>
+<script src="../lang/zh_CN.js"></script>
+<script>
+KindEditor.ready(function(K) {
+var editor = K.editor({
+allowFileManager : true
+});
+K('#insertfile').click(function() {
+editor.loadPlugin('insertfile', function() {
+editor.plugin.fileDialog({
+fileUrl : K('#url').val(),
+clickFn : function(url, title) {
+K('#url').val(url);
+editor.hideDialog();
+}
+});
+});
+});
+});
+</script>
+</head>
+<body>
+<input type="text" id="url" value="" /> <input type="button" id="insertfile" value="Ñ¡ÔñÎÄ¼ş" />
+</body>
 </html>
 
-å››ã€éƒ¨åˆ†è„šæœ¬ä¿®æ”¹ä»£ç ï¼š
-1 æ’å…¥æ–‡ä»¶åï¼Œæ˜¾ç¤ºä¸ºè·¯å¾„å¦‚éœ€ä¿®æ”¹ä¸ºæ˜¾ç¤ºå›¾æ ‡ï¼Œåœ¨
-kindeditor/plugins/insertfile/insertfile.jsæ–‡ä»¶ä¸­æŠŠï¼š
+ËÄ¡¢²¿·Ö½Å±¾ĞŞ¸Ä´úÂë£º
+1 ²åÈëÎÄ¼şºó£¬ÏÔÊ¾ÎªÂ·¾¶ÈçĞèĞŞ¸ÄÎªÏÔÊ¾Í¼±ê£¬ÔÚ
+kindeditor/plugins/insertfile/insertfile.jsÎÄ¼şÖĞ°Ñ£º
 self.clickToolbar(name, function() {
-            self.plugin.fileDialog({
-                   clickFn : function(url, title) {
-                          var html = '<a class="ke-insertfile" href="' + url + '" data-ke-src="' + url + '" target="_blank">' + title + '</a>';
-                          self.insertHtml(html).hideDialog().focus();
-                    }
-            });
+self.plugin.fileDialog({
+clickFn : function(url, title) {
+var html = '<a class="ke-insertfile" href="' + url + '" data-ke-src="' + url + '" target="_blank">' + title + '</a>';
+self.insertHtml(html).hideDialog().focus();
+}
+});
 };
-æ›¿æ¢æˆï¼ˆæ³¨æ„çº¢è‰²ä»£ç è·¯å¾„ï¼‰ï¼š
-	self.clickToolbar(name, function() {
-		self.plugin.fileDialog({
-			clickFn : function(url, title) {
-					  var ext=/\.[^\.]+$/.exec(url);
-					  img = 'rar.gif';
-					  if(ext == '.doc')  img='doc.gif';
-					  if(ext == '.xls')  img="execl.gif";
-					  if(ext == ".ppt")  img="ppt.gif";
-					  if(ext ==  ".rar")  img="rar.gif";
-					  if(ext ==  ".zip")  img="zip.gif";
-					  if(ext ==  ".txt")  img="txt.gif";
-					  if(ext ==  ".pdf")  img="pdf.gif";
-					  if(ext ==  ".docx") img="doc.gif";
-					  if(ext ==  ".xlsx") img="execl.gif";
-					  if(ext == ".pptx") img="ppt.gif";
-					  img = "/hkdnkjweb2014/SysImage/icon32/"+img;
-					  var html ='<a class="ke-insertfile" href="' + url + '" data-ke-src="' + url + '" target="_self">' + '<img src="'+img+'" border="0"/>' +  '</a>';
-					  self.insertHtml(html).hideDialog().focus();  
-			}
-		});
-	};
+Ìæ»»³É£¨×¢ÒâºìÉ«´úÂëÂ·¾¶£©£º
+self.clickToolbar(name, function() {
+self.plugin.fileDialog({
+clickFn : function(url, title) {
+var ext=/\.[^\.]+$/.exec(url);
+img = 'rar.gif';
+if(ext == '.doc')  img='doc.gif';
+if(ext == '.xls')  img="execl.gif";
+if(ext == ".ppt")  img="ppt.gif";
+if(ext ==  ".rar")  img="rar.gif";
+if(ext ==  ".zip")  img="zip.gif";
+if(ext ==  ".txt")  img="txt.gif";
+if(ext ==  ".pdf")  img="pdf.gif";
+if(ext ==  ".docx") img="doc.gif";
+if(ext ==  ".xlsx") img="execl.gif";
+if(ext == ".pptx") img="ppt.gif";
+img = "/hkdnkjweb2014/SysImage/icon32/"+img;
+var html ='<a class="ke-insertfile" href="' + url + '" data-ke-src="' + url + '" target="_self">' + '<img src="'+img+'" border="0"/>' +  '</a>';
+self.insertHtml(html).hideDialog().focus();  
+}
+});
+};
+# kindeditor-4.1.10
