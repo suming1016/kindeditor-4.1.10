@@ -1,31 +1,34 @@
 # kindeditor-4.1.10
-
+==
 kindEditor编辑器是一个由JS写成的在线编辑器，很多网站或CMS等都有用它，口碑不错，目前最新版本是4.1.10。其实它的用法非常简单:
 
-一、下载
-
+###一、下载
+--
     直接点击“download zip”下载即可
 
-二、部署
+###二、部署
+--
 解压kindeditor-x.x.x.zip文件，将所有文件上传到您的网站程序目录里，例如：http://您的域名/editor/
-您可以根据需求删除以下目录后上传到服务器。
-	asp-ASP程序
-	asp.net-ASP.NET程序
-	php-PHP程序
-	sp-JSP程序
-	examples-演示文件
+您可以根据需求删除以下目录后上传到服务器:<br>
+	asp-ASP程序<br>
+	asp.net-ASP.NET程序<br>
+	php-PHP程序<br>
+	sp-JSP程序<br>
+	examples-演示文件<br>
 在这里我假设放到了plugin目录。
 
-三、嵌入
-
+###三、嵌入
+--
     在需要加入编辑器的页面的HTML中倒入
 ```
 	<link rel="stylesheet" href="/plugin/kindeditor-4.1.10/themes/default/default.css" />
 	<script charset="utf-8" src="/plugin/kindeditor-4.1.10/kindeditor-min.js"></script>
 	<script charset="utf-8" src="/plugin/kindeditor-4.1.10/lang/zh_CN.js"></script>
 ```
-然后添加一个输入框
-	<textarea id="editor_id" name="content"></textarea>
+然后添加一个输入框<br>
+```
+	<textarea id="editor_id" name="content"></textarea><br>
+```
 最后在加入一段JS
 ```
 KindEditor.ready(function(K) {
@@ -45,15 +48,14 @@ cssPath是代码样式表，uploadJson是编辑器的图片上传组件的上传
 
 说到上传地址，大家应该还记的在上传服务器之前我叫大家先删掉的几个文件夹吧，选择你的网站的开发语言的目录你可以看到如PHP目录下的upload_json.php文件，它里面主要写了接受图片上传的方法，大家可以改改自己用。后台部分的东西这里就不细讲了。
 
-四、取值
-
+###四、取值
+--
     编辑器嵌入完成后我们如何取值呢？其实它的包里也有例字，那就是  用editor.html()方法来取值。
     
---------------------------------------------------------------------------------------------------------------------------------------
 kindeditor-4.1.10用法介绍：
     
-一、asp添加编辑器
-1在该HTML页面添加以下脚本，注意红色代码路径：
+###一、asp添加编辑器<br/>
+####1、在该HTML页面添加以下脚本，注意红色代码路径：
 ```
   <link rel="stylesheet" href=" kindeditor/themes/default/default.css" />
   <script charset="utf-8" src="kindeditor/kindeditor.js"></script>
@@ -81,15 +83,15 @@ KindEditor.ready(function(K) {
 });
 </script>
 ```
-注释：含有上传文件功能
-2在需要显示编辑器的位置添加textarea输入框：
+注释：含有上传文件功能<br/>
+####2、在需要显示编辑器的位置添加textarea输入框：
 ```
 <textarea id="editor_id" name="content" style="width:700px;height:300px;">
 &lt;strong&gt;HTML内容&lt;/strong&gt;
 </textarea>
 ```
-二、如需要单独调用组件：
-1 在已经添加以下脚本下加入：
+###二、如需要单独调用组件：<br/>
+####1、 在已经添加以下脚本下加入：
 ```
 <script charset="utf-8" src="kindeditor/kindeditor.js"></script>
 <script charset="utf-8" src="kindeditor/lang/zh_CN.js"></script>
@@ -117,18 +119,18 @@ K('#image1').click(function() {
     });
   });
 });
-```
 </script>
-     --------------------------注意添加位置和红色代码名称----------------------
+```
+--------------------------注意添加位置和红色代码名称----------------------
 
 
-2在需要显示编辑器的位置添加input输入框：
+####2在需要显示编辑器的位置添加input输入框：
 ```
 <input type="text" id="img" name="img" value="" size=50 /> <input type="button" id="image1" value="选择图片" />
 ```
-三、部分脚本代码，更多参照官方演示文档：
+###三、部分脚本代码，更多参照官方演示文档：<br/>
 
-1 上传图片弹出框
+####1、上传图片弹出框
 ```
 <html>
      <head>
@@ -187,7 +189,7 @@ K('#image1').click(function() {
      </body>
   </html>
 ``` 
-2 批量上传图片弹出框
+####2、批量上传图片弹出框
 ```
 <html>
      <head>
@@ -224,7 +226,7 @@ K('#image1').click(function() {
      </body>
 </html>
 ```
-3 上传文件弹出框
+####3、上传文件弹出框
 ```
 <html>
      <head>
@@ -257,8 +259,8 @@ K('#image1').click(function() {
      </body>
 </html>
 ```
-四、部分脚本修改代码：
-1 插入文件后，显示为路径如需修改为显示图标，在
+###四、部分脚本修改代码：<br/>
+####1、插入文件后，显示为路径如需修改为显示图标，在<br/>
 kindeditor/plugins/insertfile/insertfile.js文件中把：
 ```
 self.clickToolbar(name, function() {
